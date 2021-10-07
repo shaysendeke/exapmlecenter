@@ -148,9 +148,25 @@ header img {
     }
     nav a{
         text-decoration: none;
-        font-size: 8px;
+        font-size: 6px;
         font-weight: 200;
     }
+    header {
+        height: 40px
+    }
+    header.img{
+        width: 50px;
+        height: 50px;
+    }
+    #felicity{
+        width: 200px;
+        height: 200px;
+
+    }
+    .clinical{
+        font-size: small;
+    }
+    
     .entrance{
         display: flex;
         flex-wrap: wrap;
@@ -158,4 +174,20 @@ header img {
     }
     /* .clinNacade img {display: none;} */
     .articles {grid-template-columns: repeat(1, 1fr)}
+    @media screen and (max-width: 631px){
+        nav a{
+          /* position: fixed; */
+          position: relative;
+          text-decoration: none;
+          top: 0px;
+          font-size: 6px;
+          /* font-weight: 200; */
+      }
+      nav {
+        position: fixed;
+      }
+    }
+    header img {
+        display: none;
+    }
 }

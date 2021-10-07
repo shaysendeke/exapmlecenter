@@ -108,7 +108,10 @@ height: 100px;
 .clinical{
       background-color: var(--bg1);
       text-align: center;
-      font-family: var(--font);}
+      font-family: var(--font);
+    font-size: small;
+  }
+    
 .clinNacadem{         
       display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -159,4 +162,28 @@ height: 100px;
     }
     /* .clinNacade img {display: none;} */
     .articles {grid-template-columns: repeat(1, 1fr)}
+
+    @media screen and (max-width: 631px){
+      nav a{
+        /* position: fixed; */
+        position: relative;
+        text-decoration: none;
+        top: 0px;
+        font-size: 6px;
+        /* font-weight: 200; */
+    }
+    nav {
+      position: fixed;
+    }
+  }
+  header img {
+      display: none;
+  }
+  header {
+    height: 40px
 }
+header.img{
+    width: 50px;
+    height: 50px;
+}
+  }
